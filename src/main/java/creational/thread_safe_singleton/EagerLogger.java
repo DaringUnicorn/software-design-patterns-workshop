@@ -22,4 +22,5 @@ public class EagerLogger {
     public static EagerLogger getInstance() {
         return instance;
     }
+    
 }
