@@ -2,13 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package creational.factory;
+package creational.factory1;
 
 /**
  *
  * @author Panda
  */
-public interface Framework {
+public class ApplicationTwo implements Framework {
 
-    Product makeProduct();
+    @Override
+    public Product makeProduct() {
+        return new ProductTwo();
+    }
+
 }
