@@ -8,11 +8,11 @@ package structural.bridge;
  *
  * @author Panda
  */
-public class BluetoothPrinterDriver implements PrinterDriver {
+public class RedCircle implements DrawAPI {
 
     @Override
-    public void printData(String data) {
-        System.out.println("[Bluetooth Printer] Veri gönderiliyor: " + data);
-        // Burada Bluetooth üzerinden yazdırma kodu olurdu
+    public void drawCircle(double x, double y, double radius) {
+        System.out.println("Kırmızı daire çiziliyor: " + "x= " + x + ", y= " + ", radius= " + radius);
     }
+
 }

@@ -8,11 +8,11 @@ package structural.bridge;
  *
  * @author Panda
  */
-public class NetworkPrinterDriver implements PrinterDriver {
+public class GreenCircle implements DrawAPI {
 
     @Override
-    public void printData(String data) {
-        System.out.println("[Network Printer] Veri gönderiliyor: " + data);
-        // Burada Ağ protokolüyle yazdırma kodu (IP, port vs.) olurdu
+    public void drawCircle(double x, double y, double radius) {
+        System.out.println("Yeşil daire çiziliyor: " + "x= " + x + ", y= " + ", radius= " + radius);
     }
+
 }

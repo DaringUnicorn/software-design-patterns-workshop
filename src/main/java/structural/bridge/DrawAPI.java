@@ -8,7 +8,6 @@ package structural.bridge;
  *
  * @author Panda
  */
-public interface PrinterDriver {
-
-    void printData(String data);
+public interface DrawAPI {
+    void drawCircle(double x, double y, double radius);
 }

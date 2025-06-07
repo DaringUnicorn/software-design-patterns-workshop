@@ -8,11 +8,13 @@ package structural.bridge;
  *
  * @author Panda
  */
-public class UsbPrinterDriver implements PrinterDriver {
+public abstract class Shape {
 
-    @Override
-    public void printData(String data) {
-        System.out.println("[USB Printer] Veri gönderiliyor: " + data);
-        // Burada gerçek USB protokolüyle iletişim kuran kod olurdu
+    public DrawAPI drawAPI;
+
+    public Shape(DrawAPI drawAPI) {
+        this.drawAPI = drawAPI;
     }
+
+    public abstract void draw();
 }
